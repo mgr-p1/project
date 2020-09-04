@@ -1,0 +1,27 @@
+ul {
+list-style:none;
+}
+
+li.first {
+border: 1px solid #ccc;
+width: 200px;
+}
+
+li.common {
+width: 200px;
+border-left: 1px solid #ccc;
+border-right: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+
+span.column-first {
+float: left;
+padding: 10px;
+}
+
+span.column-common {
+display: block;
+margin-left: 110px;
+padding: 10px;
+border-left: 1px solid #ccc;
+}

@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+  <html jang=ja>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{% static 'utahime/css/style.css' %}">
+  <title>歌姫</title>
+  <body>
+    <h1>登録済みカード一覧</h1>
+    <table id="cardlist">
+      <tr>
+        <th class="idol">アイドル</th>
+        <th class="name">カード</th>
+        <th class="status">Vocal</th>
+        <th class="status">Dance</th>
+        <th class="status">Visual</th>
+      </tr>
+      {% for item in scard %}
+      <tr>
+        <td class="idol">{{item.idol}}</td>
+        <td class="name">{{item.illust}}</td>
+        <td class="status">{{item.vocal}}</td>
+        <td class="status">{{item.dance}}</td>
+        <td class="status">{{item.visual}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

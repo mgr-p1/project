@@ -1,0 +1,28 @@
+table#cardlist{
+  background-color: black;
+  margin: 30px 20px 0px 20px;
+}
+#cardlist tr{
+  background-color: white;
+  margin: 0px;
+}
+#cardlist tr td,th{
+  height:30px;
+  margin: 0px;
+}
+#cardlist tr th{
+  background-color: #ccc;
+}
+#cardlist tr:hover{
+  background-color: #ffffcc;
+  transition-duration: 1s;
+}
+.idol{
+  width: 150px;
+}
+.name {
+  width: 300px;
+}
+.status{
+  width: 100px;
+}
